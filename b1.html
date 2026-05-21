@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate area of circle</title>
+    <script src="kiemtrahotenb1.js"></script>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .marriage-certificate {
+            width: 600px;
+            background-color: #fff9f9;
+            border: 15px solid #f8bbd0; /* Màu hồng bao quanh */
+            padding: 10px;
+            position: relative;
+            color: #b71c1c; /* Màu đỏ đô đặc trưng */
+        }
+
+        .inner-border {
+            border: 2px solid #f06292;
+            padding: 30px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .national-motto {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 0;
+        }
+
+        .serial-number {
+            text-align: right;
+            font-size: 0.9em;
+        }
+
+        .emblem {
+            display: block;
+            margin: 10px auto;
+            width: 80px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+            letter-spacing: 1px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .spouse-info p, .footer-info p {
+            margin: 15px 0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .registrar {
+            margin-top: 60px;
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        em {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="marriage-certificate">
+    <div class="inner-border">
+        <header>
+            <p class="national-motto">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
+            <p class="independence">Độc lập - Tự do - Hạnh phúc</p>
+            <div class="serial-number">Số: ....................</div>
+        </header>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/National_Emblem_of_Vietnam.svg/2048px-National_Emblem_of_Vietnam.svg.png" alt="Quốc huy" class="emblem">
+
+        <h1>GIẤY CHỨNG NHẬN KẾT HÔN</h1>
+
+        <div class="content-grid">
+            
+                <div class="spouse-info">
+                    <form >
+                        <p>Họ tên vợ: <input type="text" id="ten_vo"><span id="ten_vo_er"></span></p>
+                        <p>Ngày sinh: <input type="text" id="ngay_vo" placeholder="dd/mm/yyyy"><span id="ngay_vo_er"></span></p>
+                        <p>Email: <input type="text" id="email_vo"><span id="email_vo_er"></span></p>               
+                        <p>Dân tộc: ............ Quốc tịch: ................</p>
+                        <p>Nơi cư trú: .....................................</p>
+                        <p>Giấy tờ tùy thân: ...............................</p>
+                    </form>
+                </div>
+                
+                <div class="spouse-info">
+                    <form>
+                        <p>Họ tên chồng: <input type="text" id="ten_chong"><span id="ten_chong_er"></span></p>
+                        <p>Ngày sinh: <input type="text" id="ngay_chong" placeholder="dd/mm/yyyy"><span id="ngay_chong_er"></span></p>
+                        <p>Email: <input type="text" id="email_chong"><span id="email_chong_er"></span></p>
+                        <p>Dân tộc: ............ Quốc tịch: ................</p>
+                        <p>Nơi cư trú: .....................................</p>
+                        <p>Giấy tờ tùy thân: ...............................</p>
+                    </form>
+                </div>
+            
+        </div>
+
+        <div class="footer-info">
+            <p>Nơi đăng ký kết hôn: ..........................................................................................................</p>
+            <p>Ngày, tháng, năm đăng ký: ..................................................................................................</p>
+        </div>
+
+        <div class="signature-section">
+            <div class="sign-box">
+                <p><strong>Vợ</strong></p>
+                <p><em>(Ký, ghi rõ họ, chữ đệm, tên)</em></p>
+            </div>
+            <div class="sign-box">
+                <p><strong>Chồng</strong></p>
+                <p><em>(Ký, ghi rõ họ, chữ đệm, tên)</em></p>
+            </div>
+        </div>
+        
+        <div class="registrar">
+            <p><strong>NGƯỜI KÝ GIẤY CHỨNG NHẬN KẾT HÔN</strong></p>
+            <p><em>(Ký, ghi rõ họ, chữ đệm, tên, chức vụ và đóng dấu)</em></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

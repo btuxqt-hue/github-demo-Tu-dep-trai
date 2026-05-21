@@ -1,0 +1,29 @@
+div.abc{
+    color: red;
+    font-family: arial;
+}
+.mau{
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cochu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+#id{
+    color: blue;
+}
+#div1{
+    width: 30%;
+    border: 5px dotted red;
+    padding: 100px;
+    margin: 50px;
+    float: left;
+}
+#div2{
+    width: 30%;
+    border: 5px dotted red;
+    padding: 10px 20px 30px 40px;
+    margin: 15px 25px 35px 45px;
+    float: left;
+}
